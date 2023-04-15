@@ -1,0 +1,26 @@
+export type OrderData = {
+  requestId: string;
+  requestIIN: string;
+  serviceName: string;
+  organizationName: string;
+  requestFirstName: string;
+  requestLastName: string;
+  countryName: string;
+  cityName: string;
+  regionName: string;
+  streetName: string;
+  houseNumber: string;
+  flatNumber: string;
+  floorNumber: string;
+  entranceNumber: string;
+  frame: string;
+  LCDName: string;
+  extraInfo: string;
+  recieverIIN: string;
+  recieverFirstName: string;
+  recieverLastName: string;
+  isConfidant: boolean;
+  deliveryServiceId: number;
+  termsOfUseChecked: boolean;
+  privacyPolicyChecked: boolean;
+};
