@@ -56,6 +56,13 @@ const readRequest = (requestId: string): Promise<IRequestData> => {
     .then((snapshot: any) => snapshot.val());
 };
 
+const readAllRequests = (): Promise<IRequestData[]> => {
+  return database
+    .ref("requests")
+    .once("value")
+    .then((snapshot: any) => snapshot.val());
+};
+
 // Function to update an existing request in the database
 const updateRequest = (
   requestId: string,
@@ -71,6 +78,7 @@ const deleteRequest = (requestId: string): Promise<void> => {
 
 export default {
   createRequest,
+  readAllRequests,
   readRequest,
   updateRequest,
   deleteRequest,
