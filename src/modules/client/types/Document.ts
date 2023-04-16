@@ -23,4 +23,5 @@ export type OrderData = {
   deliveryServiceId: number;
   termsOfUseChecked: boolean;
   privacyPolicyChecked: boolean;
+  currentStep: number;
 };

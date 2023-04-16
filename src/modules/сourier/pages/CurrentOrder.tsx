@@ -1,7 +1,9 @@
+import { List, NavBar } from "antd-mobile";
+
 export const CurrentOrder = () => {
   return (
     <div>
-      <h1>CurrentOrder</h1>
+      <NavBar className="border-b">Заказы</NavBar>
     </div>
   );
 };
